@@ -1,4 +1,6 @@
-import java.io.*;
+package gameplay;
+
+import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
 
@@ -7,27 +9,38 @@ import java.net.Socket;
  * group 11-501
  * 20161211
  */
+
 public class Server {
-    public static void main(String[] args) throws IOException {
-        final int PORT = 3456;
-        ServerSocket s = new ServerSocket(PORT);
-        Socket client = s.accept();
 
-        OutputStream os = client.getOutputStream();
-        PrintWriter out = new PrintWriter(os, true);
-        BufferedReader in = new BufferedReader(new InputStreamReader(client.getInputStream()));
+    private final int PORT = 5432;
 
-        System.out.print("Enter your name: ");
-        String userName = in.readLine();
+    public  Server() {
+    }
 
-        while (true) {
-            String message = "";
-            out.println(message);
-            System.out.println("Server: " + message);
+    private void start() {
 
-            System.out.print(userName + ": ");
-            String x = in.readLine();
-            System.out.println(x);
+        try {
+            ServerSocket serverSocket = new ServerSocket(PORT);
+
+            while (true) {
+                Socket socket1 = serverSocket.accept();
+                System.out.println("Player 1 connected");
+                Player player1 = new Player(socket1);
+
+                Socket socket2 = serverSocket.accept();
+                System.out.println("Player 2 connected");
+                Player player2 = new Player(socket2);
+
+                new Room(player1, player2);
+                System.out.println("Room created");
+            }
+
+        } catch (IOException e) {
+            e.printStackTrace();
         }
+    }
+
+    public static void main(String[] args){
+        (new Server()).start();
     }
 }

@@ -1,3 +1,5 @@
+package gameplay.models;
+
 import java.util.ArrayList;
 
 /**
@@ -6,15 +8,15 @@ import java.util.ArrayList;
  * 20161211
  */
 public class Ship {
-    private byte length;
+    private int length;
     private ArrayList<Coordinates> coordinates = new ArrayList<Coordinates>();
 
-    public Ship(byte length, ArrayList<Coordinates> coordinates) {
+    public Ship(int length, ArrayList<Coordinates> coordinates) {
         this.length = length;
         this.coordinates = coordinates;
     }
 
-    public byte getLength() {
+    public int getLength() {
         return length;
     }
 
