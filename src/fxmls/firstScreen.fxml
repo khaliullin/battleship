@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.firstScreenController">
    <columnConstraints>
       <ColumnConstraints />
       <ColumnConstraints />
@@ -16,10 +16,10 @@
       <RowConstraints />
    </rowConstraints>
    <children>
-      <AnchorPane prefHeight="291.0" prefWidth="407.0" GridPane.columnIndex="1">
+      <AnchorPane prefHeight="300.0" prefWidth="400.0" GridPane.columnIndex="1">
          <children>
-            <Button layoutX="168.0" layoutY="191.0" mnemonicParsing="false" text="Сохранить" />
-            <TextField layoutX="130.0" layoutY="121.0" />
+            <Button layoutX="164.0" layoutY="191.0" mnemonicParsing="false" text="Сохранить" />
+            <TextField layoutX="126.0" layoutY="119.0" />
          </children>
       </AnchorPane>
    </children>
