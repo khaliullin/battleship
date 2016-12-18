@@ -9,8 +9,8 @@ import javafx.scene.shape.Rectangle;
  * Created by 1 on 18.12.2016.
  */
 public class Stick extends Rectangle {
-    private final int HEIGHT = 4;
-    private final int WIDTH = 50;
+    private final int HEIGHT = 2;
+    private final int WIDTH = 25;
 
     public Stick(Orientation orientation) {
         if (orientation == Orientation.HORIZONTAL) {

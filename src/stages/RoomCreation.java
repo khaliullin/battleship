@@ -18,11 +18,11 @@ public class RoomCreation extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-//        Parent root = FXMLLoader.load(getClass().getResource("../fxmls/roomCreation.fxml"));
-        Group root = new Group();
+        Parent root = FXMLLoader.load(getClass().getResource("../fxmls/roomCreation.fxml"));
+//        Group root = new Group();
         primaryStage.setTitle("Second stage");
         Field field = new Field();
-        root.getChildren().add(field);
+//        root.getChildren().add(field);
         Scene scene = new Scene(root);
         primaryStage.setResizable(false);
         primaryStage.setScene(scene);

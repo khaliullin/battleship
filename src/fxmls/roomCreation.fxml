@@ -13,129 +13,37 @@
             <Font size="18.0" />
          </font>
       </Button>
-      <TextField layoutX="117.0" layoutY="69.0" />
       <Label layoutX="23.0" layoutY="73.0" text="Время на ход" />
-      <Button layoutX="672.0" layoutY="499.0" mnemonicParsing="false" text="Начать" />
-      <Button layoutX="572.0" layoutY="41.0" mnemonicParsing="false" text="Сгенерировать" />
-      <Text layoutX="114.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="a" />
-      <Text layoutX="152.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="b" />
-      <Text layoutX="231.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="d" />
-      <Text layoutX="192.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="c" />
-      <Text layoutX="272.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="e" />
-      <Text layoutX="313.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="f" />
-      <Text layoutX="350.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="g" />
-      <Text layoutX="390.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="h" />
-      <Text layoutX="432.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="i" />
-      <Text layoutX="472.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="j" />
-      <Text layoutX="76.0" layoutY="222.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1" />
-      <Text layoutX="76.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2" />
-      <Text layoutX="76.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3" />
-      <Text layoutX="76.0" layoutY="339.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4" />
-      <Text layoutX="76.0" layoutY="377.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5" />
-      <Text layoutX="76.0" layoutY="417.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6" />
-      <Text layoutX="76.0" layoutY="456.0" strokeType="OUTSIDE" strokeWidth="0.0" text="7" />
-      <Text layoutX="76.0" layoutY="495.0" strokeType="OUTSIDE" strokeWidth="0.0" text="8" />
-      <Text layoutX="76.0" layoutY="534.0" strokeType="OUTSIDE" strokeWidth="0.0" text="9" />
-      <Text layoutX="76.0" layoutY="573.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="97.0" layoutY="198.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="136.0" layoutY="198.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="175.0" layoutY="198.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="215.0" layoutY="198.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="255.0" layoutY="198.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="453.0" layoutY="198.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="413.0" layoutY="198.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="373.0" layoutY="198.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="334.0" layoutY="198.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="295.0" layoutY="198.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="295.0" layoutY="236.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="334.0" layoutY="236.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="373.0" layoutY="236.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="413.0" layoutY="236.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="453.0" layoutY="236.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="255.0" layoutY="236.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="215.0" layoutY="236.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="175.0" layoutY="236.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="136.0" layoutY="236.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="97.0" layoutY="236.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="97.0" layoutY="314.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="136.0" layoutY="314.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="175.0" layoutY="314.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="215.0" layoutY="314.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="255.0" layoutY="314.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="453.0" layoutY="314.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="413.0" layoutY="314.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="373.0" layoutY="314.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="334.0" layoutY="314.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="295.0" layoutY="314.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="295.0" layoutY="276.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="334.0" layoutY="276.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="373.0" layoutY="276.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="413.0" layoutY="276.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="453.0" layoutY="276.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="255.0" layoutY="276.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="215.0" layoutY="276.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="175.0" layoutY="276.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="136.0" layoutY="276.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="97.0" layoutY="276.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="97.0" layoutY="432.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="136.0" layoutY="432.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="175.0" layoutY="432.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="215.0" layoutY="432.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="255.0" layoutY="432.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="453.0" layoutY="432.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="413.0" layoutY="432.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="373.0" layoutY="432.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="334.0" layoutY="432.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="295.0" layoutY="432.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="295.0" layoutY="470.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="334.0" layoutY="470.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="373.0" layoutY="470.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="413.0" layoutY="470.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="453.0" layoutY="470.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="255.0" layoutY="470.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="215.0" layoutY="470.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="175.0" layoutY="470.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="136.0" layoutY="470.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="97.0" layoutY="470.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="97.0" layoutY="392.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="136.0" layoutY="392.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="175.0" layoutY="392.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="215.0" layoutY="392.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="255.0" layoutY="392.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="453.0" layoutY="392.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="413.0" layoutY="392.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="373.0" layoutY="392.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="334.0" layoutY="392.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="295.0" layoutY="392.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="295.0" layoutY="354.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="334.0" layoutY="354.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="373.0" layoutY="354.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="413.0" layoutY="354.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="453.0" layoutY="354.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="255.0" layoutY="354.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="215.0" layoutY="354.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="175.0" layoutY="354.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="136.0" layoutY="354.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="97.0" layoutY="354.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="97.0" layoutY="548.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="136.0" layoutY="548.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="175.0" layoutY="548.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="215.0" layoutY="548.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="255.0" layoutY="548.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="453.0" layoutY="548.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="413.0" layoutY="548.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="373.0" layoutY="548.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="334.0" layoutY="548.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="295.0" layoutY="548.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="295.0" layoutY="510.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="334.0" layoutY="510.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="373.0" layoutY="510.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="413.0" layoutY="510.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="453.0" layoutY="510.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="255.0" layoutY="510.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="215.0" layoutY="510.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="175.0" layoutY="510.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="136.0" layoutY="510.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutX="97.0" layoutY="510.0" onMouseClicked="#cellShoot" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+      <Button layoutX="379.0" layoutY="354.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="149.0" text="Начать">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button layoutX="379.0" layoutY="154.0" mnemonicParsing="false" text="Сгенерировать">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Pane fx:id="paneField" layoutX="37.0" layoutY="137.0" prefHeight="342.0" prefWidth="342.0" />
+      <Label layoutX="20.0" layoutY="141.0" text="1" />
+      <Label layoutX="20.0" layoutY="254.0" text="5" />
+      <Label layoutX="20.0" layoutY="282.0" text="6" />
+      <Label layoutX="20.0" layoutY="308.0" text="7" />
+      <Label layoutX="20.0" layoutY="337.0" text="8" />
+      <Label layoutX="17.0" layoutY="392.0" text="10" />
+      <Label layoutX="20.0" layoutY="365.0" text="9" />
+      <Label layoutX="20.0" layoutY="227.0" text="4" />
+      <Label layoutX="20.0" layoutY="199.0" text="3" />
+      <Label layoutX="265.0" layoutY="120.0" text="i" />
+      <Label layoutX="208.0" layoutY="120.0" text="g" />
+      <Label layoutX="290.0" layoutY="120.0" prefHeight="17.0" prefWidth="4.0" text="j" />
+      <Label layoutX="238.0" layoutY="120.0" text="h" />
+      <Label layoutX="188.0" layoutY="120.0" text="f" />
+      <Label layoutX="155.0" layoutY="120.0" text="e" />
+      <Label layoutX="132.0" layoutY="120.0" text="d" />
+      <Label layoutX="104.0" layoutY="120.0" text="c" />
+      <Label layoutX="71.0" layoutY="120.0" text="b" />
+      <Label layoutX="47.0" layoutY="120.0" text="a" />
+      <Label layoutX="20.0" layoutY="174.0" text="2" />
+      <Accordion layoutX="408.0" layoutY="44.0" />
+      <ChoiceBox fx:id="choiseBoxTime" layoutX="144.0" layoutY="69.0" prefHeight="25.0" prefWidth="85.0" />
    </children>
 </AnchorPane>

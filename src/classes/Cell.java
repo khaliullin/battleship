@@ -8,7 +8,7 @@ import javafx.scene.shape.Rectangle;
  * Created by 1 on 18.12.2016.
  */
 public class Cell extends Rectangle{
-    private final int SIDE = 50;
+    private final int SIDE = 25;
     private int i;
     private int j;
 
