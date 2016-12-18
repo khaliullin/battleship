@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.firstScreenController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.firstScreenController">
    <children>
-      <Button defaultButton="true" layoutX="163.0" layoutY="163.0" mnemonicParsing="false" onAction="#saveName" text="Сохранить" fx:id="btnSaveName"/>
-      <TextField layoutX="126.0" layoutY="100.0" promptText="Имя" fx:id="txtName"/>
+      <Button fx:id="btnSaveName" defaultButton="true" layoutX="145.0" layoutY="164.0" mnemonicParsing="false" onAction="#saveName" text="Сохранить">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <TextField fx:id="txtName" layoutX="100.0" layoutY="93.0" promptText="Имя">
+         <font>
+            <Font size="16.0" />
+         </font></TextField>
    </children>
 </AnchorPane>

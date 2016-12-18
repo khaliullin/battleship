@@ -1,4 +1,4 @@
-package classes;
+package stages;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -11,7 +11,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("../fxmls/firstScreen.fxml"));
-        primaryStage.setTitle("First Screen");
+        primaryStage.setTitle("First Stage");
         Scene scene = new Scene(root, 400, 300);
         primaryStage.setResizable(false);
         scene.getStylesheets().add(0, "css/mycss.css");
