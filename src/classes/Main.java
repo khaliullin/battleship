@@ -14,9 +14,13 @@ public class Main extends Application {
         primaryStage.setTitle("First Screen");
         Scene scene = new Scene(root, 400, 300);
         primaryStage.setResizable(false);
-//        scene.getStylesheets().add(int index, css link);
+        scene.getStylesheets().add(0, "css/mycss.css");
         primaryStage.setScene(scene);
         primaryStage.show();
+
+//        Parent root2 = FXMLLoader.load(getClass().getResource("../fxmls/mainScreen.fxml"));
+//        Scene scene2 = new Scene(root2, 400, 300);
+//        scene.setOnMouseClicked(event -> primaryStage.getScene().setRoot(root2));
     }
 
 
