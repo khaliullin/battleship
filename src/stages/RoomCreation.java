@@ -19,7 +19,7 @@ public class RoomCreation extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("../fxmls/roomCreation.fxml"));
         primaryStage.setTitle("Second stage");
         Field field = new Field();
-        Scene scene = new Scene(field);
+        Scene scene = new Scene(root);
         primaryStage.setResizable(false);
         primaryStage.setScene(scene);
         primaryStage.show();
