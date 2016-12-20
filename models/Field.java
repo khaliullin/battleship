@@ -112,14 +112,22 @@ public class Field {
         return map[coordinates.getX()][coordinates.getY()] == 1;
     }
 
-    public boolean checkShot(Coordinates coordinates) {
+    public byte checkShot(Coordinates coordinates) {
         int x = coordinates.getX();
         int y = coordinates.getY();
-        return map[x][y] == 1;
+        if (map[x][y] == 1)
+            return 1;
+        else if (map[x][y] == 0)
+            return 0;
+        else if (map[x][y] == -1)
+            return -1;
+        else if(map[x][y] == 2)
+            return 2;
+        return 3;
     }
 
     public boolean checkIfSank(Coordinates coordinates) {
-        if (checkShot(coordinates)) {
+        if (checkShot(coordinates) == 2) {
             int x = coordinates.getX();
             int y = coordinates.getY();
             List<Coordinates> nearCells = new ArrayList<>();
@@ -141,14 +149,13 @@ public class Field {
         return false;
     }
 
-    public boolean heatShip(Coordinates coordinates) {
-        if (checkShot(coordinates)) {
+    public byte heatShip(Coordinates coordinates) {
+        if (checkShot(coordinates) == 1) {
             map[coordinates.getX()][coordinates.getY()] = 2;
-            return true;
+            return 2;
         }
         else {
-            map[coordinates.getX()][coordinates.getY()] = -1;
-            return false;
+            return checkShot(coordinates);
         }
 
     }

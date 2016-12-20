@@ -60,7 +60,7 @@ public class Room implements Runnable{
         System.out.println(shot.charAt(0) + ";" + shot.charAt(2));
         waitingPlayer.getOut().println(shot.charAt(0) + ";" + shot.charAt(2));
 
-        if (waitingPlayer.getField().heatShip(coordinates)) {
+        if (waitingPlayer.getField().heatShip(coordinates) == 2) {
             if (waitingPlayer.getField().checkIfSank(coordinates)) {
                 waitingPlayer.getOut().println("3");
                 movingPlayer.getOut().println("30");

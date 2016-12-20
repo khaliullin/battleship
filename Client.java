@@ -48,7 +48,7 @@ public class Client {
                     out.println(coord);
                 }
 
-                else if (input.equals("3")){
+                if (input.equals("3")){
                     System.out.println("Соперник потопил ваш корабль");
                 }
 
