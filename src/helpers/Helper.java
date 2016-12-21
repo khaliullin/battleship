@@ -12,6 +12,7 @@ public class Helper {
     public static void goTo(Stage prevStage, String title, Parent root){
         prevStage.setTitle(title);
         Scene scene = new Scene(root);
+        scene.getStylesheets().add(0, "css/mycss.css");
         prevStage.setScene(scene);
     }
 }
