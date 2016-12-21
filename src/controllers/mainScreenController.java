@@ -32,7 +32,7 @@ public class MainScreenController {
     public void goToConnection(ActionEvent actionEvent) throws IOException {
         FXMLLoader myLoader = new FXMLLoader(getClass().getResource("../fxmls/connection.fxml"));
         Parent root = myLoader.load();
-        ConnectionController controller = myLoader.getController();
+        ConnectionsListController controller = myLoader.getController();
         controller.setPrevStage(prevStage);
 
         Helper.goTo(prevStage, "Connection", root);
@@ -45,5 +45,14 @@ public class MainScreenController {
         controller.setPrevStage(prevStage);
 
         Helper.goTo(prevStage, "Create Room", root);
+    }
+
+    public void goToGame(ActionEvent actionEvent) throws IOException {
+        FXMLLoader myLoader = new FXMLLoader(getClass().getResource("../fxmls/game.fxml"));
+        Parent root = myLoader.load();
+        GameController controller = myLoader.getController();
+        controller.setPrevStage(prevStage);
+
+        Helper.goTo(prevStage, "Game Screen", root);
     }
 }

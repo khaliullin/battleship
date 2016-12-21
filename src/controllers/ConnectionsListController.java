@@ -11,7 +11,8 @@ import java.io.IOException;
 /**
  * Created by 1 on 20.12.2016.
  */
-public class ConnectionController {
+public class ConnectionsListController {
+
     private Stage prevStage;
 
     public void setPrevStage(Stage prevStage) {
