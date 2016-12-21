@@ -53,6 +53,6 @@ public class MainScreenController {
         GameController controller = myLoader.getController();
         controller.setPrevStage(prevStage);
 
-        Helper.goTo(prevStage, "Game Screen", root);
+        Helper.goTo(prevStage, "Game Screen", root, 833, 507);
     }
 }
