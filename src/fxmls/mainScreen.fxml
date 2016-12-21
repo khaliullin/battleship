@@ -26,10 +26,11 @@
             <Font size="18.0" />
          </font>
       </Button>
-      <Label layoutX="98.0" layoutY="51.0" text="Морской Бой">
+      <Label alignment="CENTER" layoutX="98.0" layoutY="51.0" text="Морской Бой" textAlignment="CENTER">
          <font>
             <Font size="33.0" />
          </font>
       </Label>
+      <Button layoutX="26.0" layoutY="111.0" mnemonicParsing="false" onAction="#goToGame" text="Тест игра" />
    </children>
 </AnchorPane>
