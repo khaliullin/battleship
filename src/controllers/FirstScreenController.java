@@ -14,7 +14,7 @@ import java.io.IOException;
 /**
  * Created by 1 on 17.12.2016.
  */
-public class IrstScreenController {
+public class FirstScreenController {
 
     @FXML
     private TextField txtName;
@@ -33,7 +33,7 @@ public class IrstScreenController {
 
         FXMLLoader myLoader = new FXMLLoader(getClass().getResource("../fxmls/mainScreen.fxml"));
         Parent root = myLoader.load();
-        AinScreenController controller = myLoader.getController();
+        MainScreenController controller = myLoader.getController();
         controller.setPrevStage(prevStage);
 
 

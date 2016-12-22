@@ -11,7 +11,7 @@ import java.io.IOException;
 /**
  * Created by 1 on 18.12.2016.
  */
-public class AinScreenController {
+public class MainScreenController {
 
     private Stage prevStage;
 
@@ -41,7 +41,7 @@ public class AinScreenController {
     public void goToRoomCreation(ActionEvent actionEvent) throws IOException {
         FXMLLoader myLoader = new FXMLLoader(getClass().getResource("../fxmls/roomCreation.fxml"));
         Parent root = myLoader.load();
-        OomCreationController controller = myLoader.getController();
+        RoomCreationController controller = myLoader.getController();
         controller.setPrevStage(prevStage);
 
         Helper.goTo(prevStage, "Create Room", root);

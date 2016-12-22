@@ -18,7 +18,7 @@ import java.util.ResourceBundle;
 /**
  * Created by 1 on 18.12.2016.
  */
-public class OomCreationController implements Initializable{
+public class RoomCreationController implements Initializable{
 
     @FXML
     public ChoiceBox choiseBoxTime;
@@ -40,7 +40,7 @@ public class OomCreationController implements Initializable{
     public void goToMainScreen(ActionEvent actionEvent) throws IOException {
         FXMLLoader myLoader = new FXMLLoader(getClass().getResource("../fxmls/mainScreen.fxml"));
         Parent root = myLoader.load();
-        AinScreenController controller = myLoader.getController();
+        MainScreenController controller = myLoader.getController();
         controller.setPrevStage(prevStage);
 
         Helper.goTo(prevStage, "Connection", root);
