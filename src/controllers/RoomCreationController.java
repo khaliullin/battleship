@@ -1,5 +1,6 @@
 package controllers;
 
+import classes.Cell;
 import classes.Field;
 import helpers.Helper;
 import javafx.event.ActionEvent;
@@ -7,8 +8,10 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
+import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.layout.Pane;
+import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -21,7 +24,13 @@ import java.util.ResourceBundle;
 public class RoomCreationController implements Initializable{
 
     @FXML
-    public ChoiceBox choiseBoxTime;
+    public Button btnGenerate;
+    @FXML
+    public Button btnBegin;
+    @FXML
+    public Button btnBack;
+    @FXML
+    public Button btnAddShip;
     @FXML
     private Pane paneField;
 
@@ -34,15 +43,40 @@ public class RoomCreationController implements Initializable{
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         paneField.getChildren().add(new Field());
-        choiseBoxTime.getItems().addAll("0:30", "1:00", "1:30");
     }
 
-    public void goToMainScreen(ActionEvent actionEvent) throws IOException {
-        FXMLLoader myLoader = new FXMLLoader(getClass().getResource("../fxmls/mainScreen.fxml"));
+    public void addShip(ActionEvent actionEvent) {
+        Field field = (Field) paneField.getChildren().get(0);
+        for (int i = 0; i < field.getCells().length; i++){
+            for (int j = 0; j < field.getCells().length; j++){
+                if (field.getCellsMatrix()[i][j].getColor() == Color.GREY){
+                    field.getCellsMatrix()[i][j].setColor(Color.GREEN);
+                    field.getCells()[i][j] = 2;
+                }
+            }
+        }
+    }
+
+    public void generateField(ActionEvent actionEvent) {
+        //some actions by Sagit
+    }
+
+    public void startGame(ActionEvent actionEvent) throws IOException {
+        //some actions
+        //
+        //
+
+
+        FXMLLoader myLoader = new FXMLLoader(getClass().getResource("../fxmls/game.fxml"));
         Parent root = myLoader.load();
-        MainScreenController controller = myLoader.getController();
+        GameController controller = myLoader.getController();
         controller.setPrevStage(prevStage);
 
-        Helper.goTo(prevStage, "Connection", root);
+        Helper.goTo(prevStage, "Game Screen", root);
+    }
+
+    public void goToFirstScreen(ActionEvent actionEvent) throws IOException {
+        FXMLLoader myLoader = new FXMLLoader(getClass().getResource("../fxmls/firstScreen.fxml"));
+        Helper.goToFirstScreen(myLoader, prevStage);
     }
 }

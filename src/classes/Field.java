@@ -14,6 +14,8 @@ public class Field extends GridPane {
 
     private int [][]cells = new int[10][10];
 
+    private Cell[][]cellsMatrix = new Cell[10][10];
+
     public int[][] getCells() {
         return cells;
     }
@@ -24,6 +26,10 @@ public class Field extends GridPane {
 
     public boolean isOdd(int n) {
         return n % 2 != 0;
+    }
+
+    public Cell[][] getCellsMatrix() {
+        return cellsMatrix;
     }
 
     public Field() {
@@ -44,7 +50,10 @@ public class Field extends GridPane {
                     super.add(new Stick(Orientation.HORIZONTAL), i, j);
                 }
                 if (isOdd(i) && isOdd(j)) {
-                    super.add(new Cell(this, (i + 1) / 2 - 1, (j + 1) / 2 - 1), i, j);
+                    Cell cell = new Cell(this, (i + 1) / 2 - 1, (j + 1) / 2 - 1);
+                    super.add(cell, i, j);
+                    cellsMatrix[(i + 1) / 2 - 1][(j + 1) / 2 - 1] = cell;
+
                 }
             }
         }

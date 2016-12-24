@@ -16,6 +16,7 @@ import java.io.IOException;
  */
 public class FirstScreenController {
 
+    public TextField txtHost;
     @FXML
     private TextField txtName;
     @FXML
@@ -31,12 +32,15 @@ public class FirstScreenController {
         String name = txtName.getText();
         System.out.println(name);
 
-        FXMLLoader myLoader = new FXMLLoader(getClass().getResource("../fxmls/mainScreen.fxml"));
+        String host = txtHost.getText();
+        System.out.println(host);
+
+        FXMLLoader myLoader = new FXMLLoader(getClass().getResource("../fxmls/roomCreation.fxml"));
         Parent root = myLoader.load();
-        MainScreenController controller = myLoader.getController();
+        RoomCreationController controller = myLoader.getController();
         controller.setPrevStage(prevStage);
 
 
-        Helper.goTo(prevStage, "Main Screen", root);
+        Helper.goTo(prevStage, "Connection", root);
     }
 }

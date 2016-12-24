@@ -8,17 +8,16 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="568.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.RoomCreationController">
    <children>
-      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#goToMainScreen" text="Назад">
+      <Button fx:id="btnBack" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#goToFirstScreen" text="Назад">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
-      <Label layoutX="23.0" layoutY="73.0" text="Время на ход" />
-      <Button layoutX="379.0" layoutY="354.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="149.0" text="Начать">
+      <Button fx:id="btnBegin" layoutX="349.0" layoutY="346.0" mnemonicParsing="false" onAction="#startGame" prefHeight="39.0" prefWidth="179.0" text="Начать">
          <font>
             <Font size="18.0" />
          </font></Button>
-      <Button layoutX="379.0" layoutY="154.0" mnemonicParsing="false" text="Сгенерировать">
+      <Button fx:id="btnGenerate" layoutX="349.0" layoutY="154.0" mnemonicParsing="false" onAction="#generateField" prefHeight="39.0" prefWidth="179.0" text="Сгенерировать">
          <font>
             <Font size="18.0" />
          </font></Button>
@@ -44,6 +43,10 @@
       <Label layoutX="47.0" layoutY="120.0" text="a" />
       <Label layoutX="20.0" layoutY="174.0" text="2" />
       <Accordion layoutX="408.0" layoutY="44.0" />
-      <ChoiceBox fx:id="choiseBoxTime" layoutX="144.0" layoutY="69.0" prefHeight="25.0" prefWidth="85.0" />
+      <Button fx:id="btnAddShip" layoutX="349.0" layoutY="252.0" mnemonicParsing="false" onAction="#addShip" prefHeight="39.0" prefWidth="179.0" text="Добавить корабль">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>
