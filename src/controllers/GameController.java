@@ -1,7 +1,6 @@
 package controllers;
 
 import classes.Field;
-import classes.TimeCounter;
 import helpers.Helper;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -28,8 +27,6 @@ public class GameController implements Initializable{
     @FXML
     public Label lblEnemyName;
     @FXML
-    public Label lblTime;
-    @FXML
     public Pane paneEnemyField;
     @FXML
     public Pane paneMyField;
@@ -54,18 +51,5 @@ public class GameController implements Initializable{
         paneMyField.getChildren().add(new Field());
         paneEnemyField.getChildren().add(new Field());
         paneMyField.setDisable(true);
-        SimpleDateFormat sdf = new SimpleDateFormat();
-        Date time = null;
-        try {
-            time = sdf.parse("1:00");
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }
-        countTime(time);
-    }
-
-    public void countTime(Date time){
-        TimeCounter timeCounter = new TimeCounter(time, lblTime);
-        timeCounter.start();
     }
 }

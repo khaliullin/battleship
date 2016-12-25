@@ -15,10 +15,8 @@ import java.io.IOException;
  * Created by 1 on 17.12.2016.
  */
 public class FirstScreenController {
-
-    public TextField txtHost;
     @FXML
-    private TextField txtName;
+    public TextField txtHost;
     @FXML
     private Button btnSaveName;
 
@@ -29,9 +27,6 @@ public class FirstScreenController {
     }
 
     public void saveName(ActionEvent actionEvent) throws IOException {
-        String name = txtName.getText();
-        System.out.println(name);
-
         String host = txtHost.getText();
         System.out.println(host);
 

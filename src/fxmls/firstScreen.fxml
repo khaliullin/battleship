@@ -10,15 +10,11 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.FirstScreenController">
    <children>
-      <Button fx:id="btnSaveName" defaultButton="true" layoutX="145.0" layoutY="182.0" mnemonicParsing="false" onAction="#saveName" text="Сохранить">
+      <Button fx:id="btnSaveName" defaultButton="true" layoutX="144.0" layoutY="146.0" mnemonicParsing="false" onAction="#saveName" text="Сохранить">
          <font>
             <Font size="18.0" />
          </font></Button>
-      <TextField fx:id="txtName" layoutX="100.0" layoutY="72.0" promptText="Имя">
-         <font>
-            <Font size="16.0" />
-         </font></TextField>
-      <TextField fx:id="txtHost" layoutX="101.0" layoutY="127.0" promptText="Хост">
+      <TextField fx:id="txtHost" layoutX="100.0" layoutY="91.0" promptText="Хост">
          <font>
             <Font size="16.0" />
          </font>
