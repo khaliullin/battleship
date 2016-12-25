@@ -48,8 +48,20 @@ public class GameController implements Initializable{
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        paneMyField.getChildren().add(new Field());
-        paneEnemyField.getChildren().add(new Field());
+        Field myField = new Field();
+        for (int i = 0; i < myField.getCellsMatrix().length; i++){
+            for(int j = 0; j < myField.getCellsMatrix().length; j++){
+                myField.getCellsMatrix()[i][j].setGame(true);
+            }
+        }
+        Field enemyField = new Field();
+        for (int i = 0; i < enemyField.getCellsMatrix().length; i++){
+            for(int j = 0; j < enemyField.getCellsMatrix().length; j++){
+                enemyField.getCellsMatrix()[i][j].setGame(true);
+            }
+        }
+        paneMyField.getChildren().add(myField);
+        paneEnemyField.getChildren().add(enemyField);
         paneMyField.setDisable(true);
     }
 }

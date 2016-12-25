@@ -1,8 +1,10 @@
 package classes;
 
+import javafx.scene.Node;
 import javafx.scene.paint.Color;
 import javafx.scene.paint.Paint;
 import javafx.scene.shape.Rectangle;
+import javafx.stage.Stage;
 
 /**
  * Created by 1 on 18.12.2016.
@@ -13,6 +15,15 @@ public class Cell extends Rectangle {
     private int j;
     private Color color = Color.WHITE;
     private boolean isShip = false;
+    private boolean isGame = false;
+
+    public boolean isGame() {
+        return isGame;
+    }
+
+    public void setGame(boolean game) {
+        isGame = game;
+    }
 
     public boolean isShip() {
         return isShip;
@@ -70,6 +81,17 @@ public class Cell extends Rectangle {
                     }
                     System.out.println("-----------------------");
                 }
+            }
+            else if (color == Color.GREY && !isGame){
+                setColor(Color.ORANGE);
+                field.getCells()[i][j] = 0;
+                for (int k = 0; k < 10; k++) {
+                    for (int z = 0; z < 10; z++) {
+                        System.out.print(field.getCells()[k][z]);
+                    }
+                    System.out.println();
+                }
+                System.out.println("-----------------------");
             }
         });
     }

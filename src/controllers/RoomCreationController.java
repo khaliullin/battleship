@@ -51,7 +51,8 @@ public class RoomCreationController implements Initializable{
             for (int j = 0; j < field.getCells().length; j++){
                 if (field.getCellsMatrix()[i][j].getColor() == Color.GREY){
                     field.getCellsMatrix()[i][j].setColor(Color.GREEN);
-                    field.getCells()[i][j] = 2;
+                    field.getCellsMatrix()[i][j].setShip(true);
+                    field.getCells()[i][j] = 2;//корабль
                 }
             }
         }
