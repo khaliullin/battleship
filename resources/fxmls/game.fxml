@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="507.0" prefWidth="833.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="screens.controllers.GameController">
+   <children>
+      <Label layoutX="33.0" layoutY="184.0" text="2" />
+      <Label layoutX="60.0" layoutY="130.0" text="a" />
+      <Label layoutX="84.0" layoutY="130.0" text="b" />
+      <Label layoutX="117.0" layoutY="130.0" text="c" />
+      <Label layoutX="145.0" layoutY="130.0" text="d" />
+      <Label layoutX="168.0" layoutY="130.0" text="e" />
+      <Label layoutX="201.0" layoutY="130.0" text="f" />
+      <Label layoutX="251.0" layoutY="130.0" text="h" />
+      <Label layoutX="303.0" layoutY="130.0" prefHeight="17.0" prefWidth="4.0" text="j" />
+      <Label layoutX="221.0" layoutY="130.0" text="g" />
+      <Label layoutX="278.0" layoutY="130.0" text="i" />
+      <Label layoutX="33.0" layoutY="209.0" text="3" />
+      <Label layoutX="33.0" layoutY="237.0" text="4" />
+      <Label layoutX="33.0" layoutY="375.0" text="9" />
+      <Label layoutX="30.0" layoutY="402.0" text="10" />
+      <Label layoutX="33.0" layoutY="347.0" text="8" />
+      <Label layoutX="33.0" layoutY="318.0" text="7" />
+      <Label layoutX="33.0" layoutY="292.0" text="6" />
+      <Label layoutX="33.0" layoutY="264.0" text="5" />
+      <Label layoutX="33.0" layoutY="151.0" text="1" />
+      <Pane fx:id="paneMyField" layoutX="50.0" layoutY="147.0" prefHeight="342.0" prefWidth="342.0" />
+      <Button fx:id="btnBack" layoutX="12.0" layoutY="10.0" mnemonicParsing="false" onAction="#goToFirstScreen" text="Назад">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="435.0" layoutX="398.0" layoutY="60.0" stroke="BLACK" strokeType="INSIDE" width="3.0" />
+      <Label layoutX="446.0" layoutY="151.0" text="1" />
+      <Label layoutX="446.0" layoutY="264.0" text="5" />
+      <Label layoutX="446.0" layoutY="292.0" text="6" />
+      <Label layoutX="446.0" layoutY="318.0" text="7" />
+      <Label layoutX="446.0" layoutY="347.0" text="8" />
+      <Label layoutX="443.0" layoutY="402.0" text="10" />
+      <Label layoutX="446.0" layoutY="375.0" text="9" />
+      <Label layoutX="446.0" layoutY="237.0" text="4" />
+      <Label layoutX="446.0" layoutY="209.0" text="3" />
+      <Label layoutX="691.0" layoutY="130.0" text="i" />
+      <Label layoutX="634.0" layoutY="130.0" text="g" />
+      <Label layoutX="716.0" layoutY="130.0" prefHeight="17.0" prefWidth="4.0" text="j" />
+      <Label layoutX="664.0" layoutY="130.0" text="h" />
+      <Label layoutX="614.0" layoutY="130.0" text="f" />
+      <Label layoutX="581.0" layoutY="130.0" text="e" />
+      <Label layoutX="558.0" layoutY="130.0" text="d" />
+      <Label layoutX="530.0" layoutY="130.0" text="c" />
+      <Label layoutX="497.0" layoutY="130.0" text="b" />
+      <Label layoutX="473.0" layoutY="130.0" text="a" />
+      <Label layoutX="446.0" layoutY="184.0" text="2" />
+      <Label fx:id="lblMyName" layoutX="94.0" layoutY="79.0" text="Ваши корабли">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="lblEnemyName" layoutX="498.0" layoutY="77.0" text="Корабли противника">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Pane fx:id="paneEnemyField" layoutX="458.0" layoutY="149.0" prefHeight="269.0" prefWidth="276.0" />
+      <Label fx:id="heatLabel" layoutX="539.0" layoutY="445.0" text="Ваш ход!" textFill="#5619d0">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

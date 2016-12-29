@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="482.0" prefWidth="623.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="screens.controllers.RoomCreationController">
+   <children>
+      <Button fx:id="btnBack" layoutX="8.0" layoutY="8.0" mnemonicParsing="false" onAction="#goToFirstScreen" text="Назад">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnBegin" layoutX="375.0" layoutY="357.0" mnemonicParsing="false" onAction="#startGame" prefHeight="39.0" prefWidth="200.0" text="Начать">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button fx:id="btnGenerate" layoutX="375.0" layoutY="301.0" mnemonicParsing="false" onAction="#generateField" prefHeight="39.0" prefWidth="199.0" text="Сгенерировать">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Pane fx:id="paneField" layoutX="37.0" layoutY="137.0" prefHeight="342.0" prefWidth="342.0" />
+      <Label layoutX="20.0" layoutY="141.0" text="1" />
+      <Label layoutX="20.0" layoutY="254.0" text="5" />
+      <Label layoutX="20.0" layoutY="282.0" text="6" />
+      <Label layoutX="20.0" layoutY="308.0" text="7" />
+      <Label layoutX="20.0" layoutY="337.0" text="8" />
+      <Label layoutX="17.0" layoutY="392.0" text="10" />
+      <Label layoutX="20.0" layoutY="365.0" text="9" />
+      <Label layoutX="20.0" layoutY="227.0" text="4" />
+      <Label layoutX="20.0" layoutY="199.0" text="3" />
+      <Label layoutX="265.0" layoutY="120.0" text="i" />
+      <Label layoutX="208.0" layoutY="120.0" text="g" />
+      <Label layoutX="290.0" layoutY="120.0" prefHeight="17.0" prefWidth="4.0" text="j" />
+      <Label layoutX="238.0" layoutY="120.0" text="h" />
+      <Label layoutX="188.0" layoutY="120.0" text="f" />
+      <Label layoutX="155.0" layoutY="120.0" text="e" />
+      <Label layoutX="132.0" layoutY="120.0" text="d" />
+      <Label layoutX="104.0" layoutY="120.0" text="c" />
+      <Label layoutX="71.0" layoutY="120.0" text="b" />
+      <Label layoutX="47.0" layoutY="120.0" text="a" />
+      <Label layoutX="20.0" layoutY="174.0" text="2" />
+      <Accordion layoutX="408.0" layoutY="44.0" />
+   </children>
+</AnchorPane>
