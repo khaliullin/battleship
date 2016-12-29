@@ -1,8 +1,11 @@
 package gameplay;
 
-import gameplay.models.Field;
+import screens.classes.Field;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.PrintWriter;
 import java.net.Socket;
 
 /**
@@ -12,15 +15,17 @@ import java.net.Socket;
  */
 public class Player {
     private Socket socket;
-    private Field field;
+    public static Field field = new Field();
     private boolean alive;
     private BufferedReader in;
     private PrintWriter out;
+    public static int index = 0;
 
-    public Player(Socket socket) throws IOException {
+    public Player(Socket socket, int index) throws IOException {
         this.socket = socket;
         this.in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
         this.out = new PrintWriter(socket.getOutputStream(), true);
+        this.index = index;
     }
 
     public Field getField() {
@@ -39,12 +44,9 @@ public class Player {
         return socket;
     }
 
-    public static void main(String[] args) {
-        new Client();
-    }
-
-    public void generateField() {
-        field = new Field();
+    public int[][] generateField() {
+        System.out.println("generating field in Player");
+        return field.generateField().getCells();
     }
 
     public boolean isAlive() {
